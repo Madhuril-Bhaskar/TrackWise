@@ -102,7 +102,7 @@ git clone https://github.com/your-username/TrackWise.git
 cd TrackWise
 ```
 ### 2. Install Dependencies
-Backend
+
 ```bash
 cd backend
 npm install
