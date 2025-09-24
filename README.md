@@ -112,41 +112,8 @@ cd frontend
 cd expense-tracker
 npm install
 ```
-### 3. Environment Variables
-   
--> TO SET UP MONGODB
-```bash
-> Go to https://www.mongodb.com/
-> Login or Create an Account
-> Now create a project by clicking on the “New Project” button
-> Now, Enter the project name and Click “Next”
-> Add Member If needed. Then click on “Create Project”
-> Now click on “Clusters” option in side menu and Click on “Build a Cluster” 
-button
->  Now, select the type of cluster and give a cluster name
-> Select a server provider, select a region that is near you, and click on “Create 
-Deployment”
-> Now we will be directed to the connection steps page.
->  Here we need to add a connection IP address. Create a database user and click on the “Choose a 
-connection method” button
-> In the Next step, Select `Drivers` option to access the atlas database using our 
-Node.js project 
-> Now Copy the connection string
->  Paste the connection string inside `.env` file:
-```
- 
--> TO SET UP JWT
->  After updating the connection string, let generate our JWT_SECRET. For that run the following command in the terminal.
-```bash
-node -e "console.log(require('crypto').randomBytes(64).toString('hex'))" 
-```
-Now Copy the connection string and JWT_SECRET and paste
-```bash
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-CLIENT_URL=http://localhost:5173
-```
-### 4. Run the App
+
+### 3. Run the App
 ```bash
 cd backend
 npm run dev
